@@ -15,7 +15,8 @@
                     <CommandText>SELECT Item.ItemName, Item.ItemDescription, ItemPrice.DefaultPrice, ItemPrice.Level1Price, ItemPrice.Level2Price, ItemPrice.Level3Price, ItemPrice.Level4Price, ItemPrice.Level5Price, Item.Department
 FROM     Item INNER JOIN
                   ItemPrice ON Item.ItemID = ItemPrice.ItemID
-where ItemPrice.Level1Price &gt; 0</CommandText>
+WHERE  (ItemPrice.Level1Price &gt; 0) OR
+                  (ItemPrice.DefaultPrice &gt; 0)</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -42,7 +43,7 @@ where ItemPrice.Level1Price &gt; 0</CommandText>
   <xs:element name="fpos5DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="fpos5DataSet" msprop:Generator_UserDSName="fpos5DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ItemPriceTable" msprop:Generator_TableClassName="ItemPriceTableDataTable" msprop:Generator_TableVarName="tableItemPriceTable" msprop:Generator_RowChangedName="ItemPriceTableRowChanged" msprop:Generator_TablePropName="ItemPriceTable" msprop:Generator_RowDeletingName="ItemPriceTableRowDeleting" msprop:Generator_RowChangingName="ItemPriceTableRowChanging" msprop:Generator_RowEvHandlerName="ItemPriceTableRowChangeEventHandler" msprop:Generator_RowDeletedName="ItemPriceTableRowDeleted" msprop:Generator_RowClassName="ItemPriceTableRow" msprop:Generator_UserTableName="ItemPriceTable" msprop:Generator_RowEvArgName="ItemPriceTableRowChangeEvent">
+        <xs:element name="ItemPriceTable" msprop:Generator_TableClassName="ItemPriceTableDataTable" msprop:Generator_TableVarName="tableItemPriceTable" msprop:Generator_TablePropName="ItemPriceTable" msprop:Generator_RowDeletingName="ItemPriceTableRowDeleting" msprop:Generator_RowChangingName="ItemPriceTableRowChanging" msprop:Generator_RowEvHandlerName="ItemPriceTableRowChangeEventHandler" msprop:Generator_RowDeletedName="ItemPriceTableRowDeleted" msprop:Generator_UserTableName="ItemPriceTable" msprop:Generator_RowChangedName="ItemPriceTableRowChanged" msprop:Generator_RowEvArgName="ItemPriceTableRowChangeEvent" msprop:Generator_RowClassName="ItemPriceTableRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ItemName" msprop:Generator_ColumnVarNameInTable="columnItemName" msprop:Generator_ColumnPropNameInRow="ItemName" msprop:Generator_ColumnPropNameInTable="ItemNameColumn" msprop:Generator_UserColumnName="ItemName">

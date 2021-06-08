@@ -96,7 +96,7 @@
             // 
             this.pbxSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxSettings.Image = global::FPOSReports.Properties.Resources.cog_gear;
-            this.pbxSettings.Location = new System.Drawing.Point(516, 3);
+            this.pbxSettings.Location = new System.Drawing.Point(496, 3);
             this.pbxSettings.Name = "pbxSettings";
             this.pbxSettings.Size = new System.Drawing.Size(29, 23);
             this.pbxSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

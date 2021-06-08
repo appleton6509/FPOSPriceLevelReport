@@ -44,7 +44,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.91261cm</Width>
+              <Width>2.77478cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.54cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.82296cm</Width>
@@ -86,6 +89,46 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Level1Price3">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Label>DefaultPrice</Label>
+                              <Value>=Fields!DefaultPrice.Value / 100</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <Format>'$'0.00;('$'0.00);'-'</Format>
+                                <rd:FormatSymbolCulture>en-CA</rd:FormatSymbolCulture>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Level1Price</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e5e5e5</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>="Transparent"</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-CA</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -163,6 +206,45 @@
                     <Style>
                       <Border>
                         <Color>#0b536f</Color>
+                        <Style>None</Style>
+                      </Border>
+                      <BackgroundColor>#0b536f</BackgroundColor>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+            </TablixMember>
+            <TablixMember>
+              <TablixHeader>
+                <Size>0.68467cm</Size>
+                <CellContents>
+                  <Textbox Name="Textbox3">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>DefaultPrice</Value>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                              <Color>White</Color>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                    <Style>
+                      <Border>
                         <Style>None</Style>
                       </Border>
                       <BackgroundColor>#0b536f</BackgroundColor>
@@ -287,7 +369,7 @@
         <Top>0cm</Top>
         <Left>0cm</Left>
         <Height>1.29325cm</Height>
-        <Width>15.54803cm</Width>
+        <Width>15.95019cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -304,7 +386,7 @@
       </Border>
     </Style>
   </Body>
-  <Width>6.12127in</Width>
+  <Width>6.2796in</Width>
   <Page>
     <PageHeight>10.9in</PageHeight>
     <PageWidth>8.4in</PageWidth>

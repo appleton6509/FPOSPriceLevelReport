@@ -944,7 +944,8 @@ namespace FPOSReports.fpos5DataSetTableAdapters {
             this._commandCollection[0].CommandText = @"SELECT Item.ItemName, Item.ItemDescription, ItemPrice.DefaultPrice, ItemPrice.Level1Price, ItemPrice.Level2Price, ItemPrice.Level3Price, ItemPrice.Level4Price, ItemPrice.Level5Price, Item.Department
 FROM     Item INNER JOIN
                   ItemPrice ON Item.ItemID = ItemPrice.ItemID
-where ItemPrice.Level1Price > 0";
+WHERE  (ItemPrice.Level1Price > 0) OR
+                  (ItemPrice.DefaultPrice > 0)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
